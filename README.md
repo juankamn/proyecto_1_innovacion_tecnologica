@@ -1,82 +1,92 @@
-____________________________________________________________________________________
+# Child Mind Institute — Problematic Internet Use (Kaggle)
 
+Course project for **Proyecto 1 de Innovación Tecnológica**, Applied Artificial Intelligence Master, Universidad Icesi, Cali, Colombia.
 
-# Project Template
-This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
+**Competition:** [Child Mind Institute — Problematic Internet Use](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/overview) (Kaggle)
 
-This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
+**Project status:** Active
 
-*Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
-____________________________________________________________________________________
+---
 
-# Project Name
-This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
+## Team
 
-#### -- Project Status: [Active, On-Hold, Completed]
+| Name | GitHub / contact (optional) |
+|------|-----------------------------|
+| Isabel Cristina Ruiz Buriticá | _TBD_ |
+| Jairo Andrés Valencia | _TBD_ |
+| Juan Camilo Macias Navarrete | _TBD_ |
 
-## Contributing Members
+**Instructor:** _TBD_
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
+_Add team roles (e.g. coordination) here if you use them._
 
-#### Other Members:
+---
 
-|Name     |  Email   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+## Project objective
 
-## Contact
-* Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
+We participate in the Kaggle competition **Child Mind Institute — Problematic Internet Use**. The goal is to build models that help **identify patterns related to problematic internet use (PIU)** in children and adolescents using **de-identified, multi-source data** from the Child Mind Institute’s **Healthy Brain Network (HBN)** study (e.g. questionnaires, clinical and fitness measures, and wearable-derived activity where provided).
 
+A good solution supports **early insight** for researchers and clinicians; final scoring and rules are defined on the [competition page](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/overview) (including the **Evaluation** tab).
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+---
 
-### Partner
-This section should be added when there's a partner institution 
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+## Competition context & data
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+- **Organizers / data:** Child Mind Institute, in collaboration with Kaggle; dataset derives from HBN research protocols.
+- **Access:** Data is downloaded from Kaggle after accepting the competition rules. **Do not commit raw competition files** to this repository (size, rules, and team privacy). Use local paths or team-agreed storage outside Git, or document the expected folder layout in `docs/instalacion.md`.
+- **Useful links:** [Competition overview](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/overview) · [Data tab](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/data)
 
-### Technologies
-* R 
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+---
 
-## Project Description
-(Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+## Methods (planned)
 
-## Getting Started
-Instructions for contributors
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+- Exploratory analysis and data visualization  
+- Feature engineering and handling of missing / heterogeneous modalities  
+- Supervised machine learning (models and validation strategy aligned with the competition)  
+- Error analysis and iteration on the leaderboard metric (see Kaggle **Evaluation**)
 
-    *If using offline data mention that and how contributors may obtain the data )*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+---
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
+## Technologies (planned)
 
-5. Follow setup [instructions](Link to file)
+- Python 3.x  
+- Jupyter / notebooks under `notebooks/`  
+- `pandas`, `numpy`; modeling stack to be pinned in `requirements.txt` / `environment.yml` (e.g. scikit-learn, gradient boosting libraries, etc.)
 
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+---
 
+## Repository layout (high level)
+
+| Path | Purpose |
+|------|---------|
+| `src/data/` | Load and preprocess data (e.g. `preprocess.py`) |
+| `src/models/` | Model definitions |
+| `src/training/` | Training scripts |
+| `src/evaluation/` | Evaluation helpers |
+| `src/utils/` | Shared utilities |
+| `src/main.py` | Entry point (when wired) |
+| `notebooks/` | Experiments and EDA |
+| `experiments/` | Logs, checkpoints, results (local; usually gitignored) |
+| `docs/` | Extended docs (`docs/instalacion.md`, etc.) |
+
+---
+
+## Getting started (contributors)
+
+1. **Clone** this repository.  
+2. **Kaggle:** create/join the team account as agreed, accept competition rules, and download the data (browser or [Kaggle API](https://www.kaggle.com/docs/api)).  
+3. **Environment:** install dependencies once they are listed in `requirements.txt` or `docs/instalacion.md`.  
+4. **Code:** place preprocessing in `src/data/`, training in `src/training/`, and keep exploratory work in `notebooks/`.  
+5. **Submissions:** generated locally; follow Kaggle’s submission format and deadlines.
+
+---
+
+## Featured notebooks / deliverables
+
+- _To add:_ links to key notebooks, reports, or final submission notes.
+
+---
+
+## Acknowledgements
+
+Project structure inspired by practices from the [Data Science Working Group](https://github.com/sfbrigade/data-science-wg) (Code for San Francisco).
