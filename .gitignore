@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Checkpoints: ignore everything in folder except docs (joblib allowlist below)
+experiments/checkpoints/*
+!experiments/checkpoints/.gitkeep
+!experiments/checkpoints/README.md
+
+*.pkl
+
+# Ignore all .joblib except versioned production checkpoints
+*.joblib
+!experiments/checkpoints/final_model.joblib
+!experiments/checkpoints/tuned_model.joblib
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Kaggle data rules CSVs
+data/raw/*.csv
