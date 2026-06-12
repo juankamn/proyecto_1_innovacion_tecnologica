@@ -1,0 +1,49 @@
+{
+  "model": "lgbm_regressor",
+  "cv_folds": 10,
+  "merged_classes_23": false,
+  "feature_selection": true,
+  "oof_qwk": 0.4333155923980877,
+  "oof_f1_macro": 0.39464803626797695,
+  "oof_balanced_accuracy": 0.38305079130667025,
+  "limitations": {
+    "minority_class": 3,
+    "minority_support_oof": 34,
+    "minority_recall_oof": 0.08823529411764706,
+    "minority_f1_oof": 0.13636363636363635,
+    "lowest_recall_class": 3,
+    "lowest_recall_oof": 0.08823529411764706,
+    "per_class_oof": [
+      {
+        "class": 0,
+        "precision": 0.7263990955342001,
+        "recall": 0.8061480552070264,
+        "f1": 0.7641986321736545,
+        "support": 1594
+      },
+      {
+        "class": 1,
+        "precision": 0.3826955074875208,
+        "recall": 0.3150684931506849,
+        "f1": 0.3456048084147258,
+        "support": 730
+      },
+      {
+        "class": 2,
+        "precision": 0.34269662921348315,
+        "recall": 0.32275132275132273,
+        "f1": 0.33242506811989103,
+        "support": 378
+      },
+      {
+        "class": 3,
+        "precision": 0.3,
+        "recall": 0.08823529411764706,
+        "f1": 0.13636363636363635,
+        "support": 34
+      }
+    ],
+    "note": "Severe class (sii=3) is under-represented in train (~1.2%); low recall OOF is expected. See docs/limitaciones_modelo.md."
+  },
+  "elapsed_seconds": 444.5
+}

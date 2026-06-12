@@ -1,0 +1,12 @@
+# Python 3.10–3.14. Prefer 3.14.2+ or 3.12/3.13.11+ (3.14.1 has a joblib/loky bug; project uses SKLEARN_N_JOBS=1 as workaround).
+numpy>=2.1,<3
+pandas>=2.2,<4
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+scikit-learn==1.9.0
+scipy>=1.14,<2
+lightgbm>=4.6,<5
+xgboost>=3.0,<4
+joblib>=1.5.2,<2
+jupyter>=1.1,<2
+ipykernel>=6.29,<8

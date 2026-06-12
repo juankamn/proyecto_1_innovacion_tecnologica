@@ -1,0 +1,17 @@
+{
+  "model": "lgbm_regressor",
+  "best_params": {
+    "model__regressor__learning_rate": 0.031430022688291114,
+    "model__regressor__min_child_samples": 7,
+    "model__regressor__n_estimators": 249,
+    "model__regressor__num_leaves": 17
+  },
+  "merged_classes_23": false,
+  "fit_on_full_train": true,
+  "feature_selection": true,
+  "thresholds": [
+    0.9711177626411477,
+    1.5173510916816946,
+    2.15641662119112
+  ]
+}
