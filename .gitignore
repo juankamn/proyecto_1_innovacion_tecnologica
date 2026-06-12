@@ -7,6 +7,8 @@ venv/
 
 # Jupyter
 .ipynb_checkpoints/
+notebooks/*.executed.ipynb
+notebooks/*.executed.venv.ipynb
 
 # Checkpoints: ignore everything in folder except docs (joblib allowlist below)
 experiments/checkpoints/*
